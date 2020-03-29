@@ -1,0 +1,124 @@
+  <!-- slider_area_start -->
+  <div class="slider_area">
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+        <div class="outline_text d-none d-lg-block">
+                Portfolio
+        </div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-12">
+                    <div class="slider_text text-center">
+                        <span>Yayo Venegas</span>
+                        <h3>
+                            Bienvenido a mi sitio web personal, aquí podrás encontrar información sobre mí y mis proyectos.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider_area_end -->
+
+
+<div class="portfolio_area">
+    <!-- <div class="container-fluid p-0"> -->
+        <div class="portfolio_wrap" >
+
+            <div class=" single_gallery" *ngFor="let pro of arregloPro; let i = index">
+                <div class="thumb">
+                    <img src="https://scontent.fcjs3-1.fna.fbcdn.net/v/t1.0-9/p960x960/89293770_2743014322418683_1935141633116864512_o.jpg?_nc_cat=107&_nc_sid=85a577&_nc_ohc=zJf9BAK623MAX92dHrK&_nc_ht=scontent.fcjs3-1.fna&_nc_tp=6&oh=741a901020b27cc70e01086a5089f6e9&oe=5EA578A6" alt="">
+                </div>
+                <div class="gallery_hover">
+                    <div class="hover_inner">
+                            <span>{{pro.categoria}}</span>
+                            <a href="{{pro.url}}"> <h3>{{pro.nombre}}</h3></a>
+                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+<!-- service_area  -->
+<div class="service_area">
+        <div class="outline_text white d-none d-lg-block">
+                Servicios
+        </div>
+        <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="icon">
+                        <img src="./assets/img/svg_icon/1.svg" alt="">
+                    </div>
+                    <h3>Páginas Web</h3>
+                    <p>Creación de sitios web con wordpress o angular, de acuerdo a tus necesidades, desde una página de aterrizaje sencilla, hasta un blog, con su página principal, categorías, creación de entradas, etc. </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="icon">
+                        <img src="./assets/img/svg_icon/2.svg" alt="">
+                    </div>
+                    <h3>Aplicaciones</h3>
+                    <p>Desarrollo de aplicaciones para Andriod y iOS, el mundo de hoy en día no funciona sin celulares y las aplicaciones que nos facilitan la vida diaria, yo puedo ayudarte con tu idea.</p>    
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="icon">
+                        <img src="./assets/img/svg_icon/3.svg" alt="">
+                    </div>
+                    <h3>Sistemas Avanzados</h3>
+                    <p>Si necesitas un sistema para una solución específica, ya sea para el manejo de inventarios o un punto de venta para tu empresa, tengo las soluciones para ti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ service_area  -->
+
+<!-- discuss_projects_start  -->
+<div class="discuss_projects">
+    <div class="outline_text white project d-none d-lg-block">
+            En que puedo ayudarte?
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="project_text text-center">
+                    <h3>Lleva tu idea al siguiente nivel</h3>
+                    <a class="boxed-btn3" href="#">Ver paquetes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- discuss_projects_end  -->
+
+<div class="about_area">
+    <div class="container">
+        <div class="row align-items-center mt-5 mb-5">
+            <div class="col-xl-6 col-lg-6">
+                <div class="about_thumb" style="">
+                    <img src="./assets/img/focus.webp" style="display:block;
+                    margin:auto; width: 50%" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="about_info">
+                    <h3>Necesitas asesoría?<br>
+                        No sabes por donde empezar?<br></h3>
+                    <p>No te preocupes ofrezco asesoría gratuita en mis instalaciones, sin compromisos de ningún tipo solo acércate
+                         y podremos analizar la mejor opción para llevar acabo tu proyecto. 
+                    </p>
+                    <a class="boxed-btn3" href="#">Agenda una cita</a>
+                    <h6 class="mt-5">ATENCION: las asesorías son presenciales no aplica por whatsapp u otros medios.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
