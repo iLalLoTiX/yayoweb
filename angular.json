@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "yayo"
+    }
+  },
+  "defaultProject": "yayo",
+  "cli": {
+    "analytics": false
+  }
 }
