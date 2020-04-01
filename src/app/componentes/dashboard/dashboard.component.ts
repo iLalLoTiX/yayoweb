@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(private auth: LoginService,
               private _fbs: FireBaseService,
-    private router: Router) { }
+              private router: Router) { }
 
     ngOnInit() {
       this._fbs.getProyectos().subscribe( resp => {this.arregloPro = resp});
@@ -63,7 +63,7 @@ export class DashboardComponent implements OnInit {
       this.proyecto = resp;
       this.proyecto.id = id;
     });
-      
+    
   }
   limpiar(){
     this.proyecto.id = null;
