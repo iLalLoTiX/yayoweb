@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private _fbs: FireBaseService) { }
 
   ngOnInit() {
-    this._fbs.getProyectos().subscribe( resp => {this.arregloPro = resp});
+    this._fbs.getProyectos().subscribe( resp => {this.arregloPro = resp;});
   }
 
 }
