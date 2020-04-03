@@ -15,7 +15,7 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
 
 //Servicios
 import { HttpClientModule } from '@angular/common/http';
-import { PruebaComponent } from './componentes/prueba/prueba.component';
+import { PreciosComponent } from './componentes/precios/precios.component';
 
 
 
@@ -27,7 +27,7 @@ import { PruebaComponent } from './componentes/prueba/prueba.component';
     ServicesComponent,
     LoginComponent,
     DashboardComponent,
-    PruebaComponent,
+    PreciosComponent
   ],
   imports: [
     BrowserModule,
