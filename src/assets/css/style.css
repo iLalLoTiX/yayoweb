@@ -390,6 +390,7 @@ h3 {
   cursor: pointer;
 }
 
+
 /* line 16, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_btn.scss */
 .boxed-btn:hover {
   background: #0181F5;
@@ -431,6 +432,45 @@ h3 {
   transition: 0.5s;
   cursor: pointer;
 }
+
+.boxed-social {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+  color: #fff;
+  display: inline-block;
+  padding: 14px 20px;
+  margin: 5px;
+  font-family: "Alata", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid #fff;  
+  border-radius: 50px; 
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.instagram-social{
+  background: #F77737;
+}
+
+.facebook-social{
+  background: #0181F5;
+}
+
+.boxed-social:hover {
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0) !important;
+  background: #fff;
+}
+
 
 /* line 46, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_btn.scss */
 .boxed-btn3:hover {
@@ -7033,3 +7073,28 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 780px) {
+  /* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_section_title.scss */
+  .yayo-d-lg{
+    display: none;
+  }
+}
+
+@media (min-width: 780px) {
+  /* line 24, ../../Arafath/CL/December/230. Portfolio/HTML/scss/_section_title.scss */
+  .yayo-d-sm{
+    display: none;
+  }
+}
+
+.item{
+  position: relative;
+  object-position: center center;
+  display: table;
+}
+
+.item .hijo{
+  display: table-cell;
+  vertical-align: middle;
+}

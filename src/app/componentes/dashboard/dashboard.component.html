@@ -111,6 +111,44 @@
 </section>
 <!-- End Sample Area -->
 
+<section class="sample-text-area">
+    <div class="container box_1170">
+        <div class="row">
+            <div class="col-lg-12 col-md-6">
+                <div class="typography">
+                <h1>Agregar teconologia</h1>
+                <hr>
+                    <button (click)="cargarImg()"
+                        class="genric-btn info"><i class="fa fa-save"></i> Cargar</button>
+
+                <hr>
+                <table class="table mt-3 animated fadeIn">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Progreso</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let pro of arregloPro; let i = index">
+                        <tr>
+                            <td>abc</td>
+                            <td>12kb</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar color-8" role="progressbar" style="width: 60%"
+                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Start Sample Area -->
 <section class="sample-text-area">
     <div class="container box_1170">

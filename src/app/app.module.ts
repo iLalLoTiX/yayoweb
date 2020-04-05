@@ -12,12 +12,18 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ServicesComponent } from './componentes/servicios/services.component';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { PreciosComponent } from './componentes/precios/precios.component';
 
 //Servicios
 import { HttpClientModule } from '@angular/common/http';
-import { PreciosComponent } from './componentes/precios/precios.component';
+import { ImgService } from './providers/img.service';
+import { environment } from 'src/environments/environment';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
+//firebase
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -33,10 +39,13 @@ import { PreciosComponent } from './componentes/precios/precios.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    CarouselModule
   ],
   providers: [
-   
+    ImgService
   ],
   bootstrap: [AppComponent]
 })

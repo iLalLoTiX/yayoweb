@@ -37,7 +37,7 @@
             <div class="col-md-12">
                 <div class="row align-items-center">
                     <div class="about_info">
-                        <p>Me adentre al mundo del diseño y programación web 
+                        <p>Me adentre al mundo del diseño web 
                             hace dos años usando wordpress, usar plantillas era muy rápido 
                             pero en muchas ocasiones no se ajustaba las necesidades de mis 
                             clientes y usando plugins los sitios se volvían muy lentos, por 
@@ -49,13 +49,13 @@
                             culminado por darme más trabajo, y se siente muy bien cuando la 
                             gente reconoce tu trabajo.</p>
     
-                        <p>Me gusta trabajar con wordpress, pero siento que no es programar como tal, pese a 
-                            que si requiere ciertos conocimientos en PHP, por eso empecé a buscar 
-                            otras tecnologías que me permitan desarrollarme como programador, ahí conocí 
-                            este maravilloso framework para programación llamado Angular 2+, en el cual he 
-                            tomado y tomo diversos cursos en Udemy, hasta ahora solo he tenido la oportunidad 
-                            de trabajar en proyectos personales, pero me siento muy ansioso, por empezar a 
-                            trabajar de forma profesional con Angular 2+.</p>
+                        <p>Me gusta trabajar con wordpress, pero siento que no es programar como tal,
+                            pese a que si requieres ciertos conocimientos en PHP, por eso empecé a 
+                            buscar otras tecnologías que me permitan desarrollarme como programador, 
+                            ahí conocí este maravilloso framework para programar llamado Angular 2+,
+                            en el cual he tomado y tomo diversos cursos en Udemy, hasta ahora solo he 
+                            tenido la oportunidad de trabajar en proyectos personales, pero ya quiero
+                            empezar a trabajar de forma profesional con Angular 2+.</p>
 
                         <p>Soy muy sincero, por alguna razón no puedo mentir, quizás porque soy malo recordando 
                             mis propias mentiras, siempre digo lo que pienso si es para aportar, considero 
@@ -70,6 +70,45 @@
             </div>
         </div>
     </div>
+
+    <div class="about_area mt-5 mb-5">
+        <div class="container">
+            
+            
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="about_info text-center">
+                        <h3>Skills</h3>
+
+                        <p>La verdad no sé exactamente como medir mi conocimiento, 
+                            cuantificarlo, mucho menos si lo domino en su totalidad, 
+                            siempre creo que se puede aprender algo nuevo, pero estas son 
+                            las herramientas o tecnologías con las que he trabajado y 
+                            tengo experiencia.</p>
+                            <div class="row">
+                                <div *ngFor="let png of logoTec" class="col-2 item">
+                                    <div class="hijo"><img                 
+                                        width="150px"
+                                        height="auto"
+                                        class="img-fluid" src="{{png}}" alt=""></div>
+                                </div>
+                            </div>
+                            
+                            <owl-carousel-o [options]="customOptions">
+ 
+                                <ng-container *ngFor="let png of logoTec">
+                                  <ng-template carouselSlide>
+                                    <img [src]="png" >
+                                  </ng-template>
+                                </ng-container>
+                             
+                              </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="about_area mt-5 mb-5">
         <div class="container">
@@ -96,12 +135,24 @@
             </div>
             
             <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 yayo-d-sm">
+                    <div class="about_info">
+                        <h3>Freelancer – Home Office</h3>
+                        <h6>Enero 2018 - Actualidad</h6>
+
+                        <p>Hasta ahora solo he trabajado de forma independiente 
+                            con wordpress, desarrolle mis propias plantillas dinámicas 
+                            y customisables con boostrap 4, al igual que algunos 
+                            widgets y plugins a medida para las necesidades de mis 
+                            proyectos.</p>
+                    </div>
+                </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="about_thumb">
                         <img src="./assets/img/BOT.png" alt="">
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
+                <div class="col-xl-6 col-lg-6 yayo-d-lg">
                     <div class="about_info">
                         <h3>Freelancer – Home Office</h3>
                         <h6>Enero 2018 - Actualidad</h6>
@@ -123,19 +174,26 @@
             <div class="col-md-12">
                 <div class="row align-items-center">
                     
-                    <div class="about_info">
-                        <p>Me gusta mucho angular y wordpress, pero igual 
-                            me interesa aprender otras tecnologías como 
-                            react.js y vue.js. En lo que llega el empleo 
-                            me dedico a trabajar en proyectos propios, por 
-                            ejemplo: pude hacer esta página con wordpress, 
-                            pero la desarrolle en angular para generar curriculum, 
-                            ¿en qué proyectos trabajo? Cuando estén listos los 
-                            publicare aquí.</p>
+                    <div class="about_info text-center">
+                        <p>Me gusta mucho angular y wordpress, pero igual me interesa 
+                            aprender otras tecnologías como react.js y vue.js. 
+                            Actualmente me dedico a mejorar mis habilidades en angular 
+                            y trabajar en algunos proyectos tanto independientes 
+                            como de algunos clientes, cuando estén listos los publicaré 
+                            en mi página de <a href="https://www.facebook.com/Yayo-Venegas-414937768858277/">Facebook</a> 
+                            o en mi página web <a [routerLink]="['/home']">aquí</a>.</p>
     
-                        <p>Espero no haberte quitado mucho tu tiempo y hayas 
-                            encontrado la información que necesitabas, te deseo 
-                            un buen día, saludos.</p>
+                        <p>Espero no haberte quitado mucho tu tiempo y hayas encontrado 
+                            la información que necesitabas, te deseo un buen día, saludos. </p>
+
+                        <p>
+                            Puedes seguirme en mis redes sociales, donde trato de subir 
+                            contenido siempre que puedo, no hablo precisamente sobre programación, 
+                            pero sí de temas varios que a mí me gustan.
+                        </p>
+                        <a class="boxed-social facebook-social" target="_blank" href="https://www.facebook.com/Yayo-Venegas-414937768858277/"><i class="fa fa-facebook"></i></a>
+                        <a class="boxed-social instagram-social" target="_blank" href="https://www.instagram.com/lalotix/?hl=es-la"><i class="fa fa-instagram"></i></a>
+                    
                     </div>
 
                 </div>

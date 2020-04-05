@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 import { NgForm, FormGroup } from '@angular/forms';
 //modelos
 import { ProyectosModel } from '../modelos/proyectos.model';
+import { FileItem } from '../modelos/pngExp.model';
+import { ImgService } from 'src/app/providers/img.service';
+
 
 
 
@@ -21,11 +24,13 @@ import { ProyectosModel } from '../modelos/proyectos.model';
 export class DashboardComponent implements OnInit {
 
   proyecto = new ProyectosModel;
+  archivos: FileItem[] = [];
 
   arregloPro: ProyectosModel [] = [];
 
   constructor(private auth: LoginService,
               private _fbs: FireBaseService,
+              private _ci: ImgService,
               private router: Router) { }
 
     ngOnInit() {
@@ -77,5 +82,10 @@ export class DashboardComponent implements OnInit {
   borrarProyecto(id: string, i: number){
     this.arregloPro.splice(i, 1);
     this._fbs.borrarProyecto(id).subscribe(resp => console.log(resp));
+  }
+
+  //subir imagenes
+  cargarImg(){
+    this._ci.cargarImg(this.archivos)
   }
 }
