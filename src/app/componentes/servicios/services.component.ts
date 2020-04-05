@@ -10,27 +10,25 @@ export class ServicesComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+    margin:30,
+    center: true,
     navSpeed: 700,
-    navText: ['<', '>'],
+    autoWidth:true,
     responsive: {
       0: {
-        items: 1
+        items: 4
       },
       400: {
-        items: 2
+        items: 4
       },
       740: {
-        items: 3
+        items: 4
       },
       940: {
-        items: 4
+        items: 6
       }
     },
-    nav: true
+    nav: false
   }
 
   public logoTec = [

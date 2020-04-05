@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ImgService } from './providers/img.service';
 import { environment } from 'src/environments/environment';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //firebase
 
@@ -42,7 +43,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    CarouselModule
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [
     ImgService

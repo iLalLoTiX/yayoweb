@@ -85,25 +85,18 @@
                             siempre creo que se puede aprender algo nuevo, pero estas son 
                             las herramientas o tecnologías con las que he trabajado y 
                             tengo experiencia.</p>
-                            <div class="row">
-                                <div *ngFor="let png of logoTec" class="col-2 item">
-                                    <div class="hijo"><img                 
-                                        width="150px"
-                                        height="auto"
-                                        class="img-fluid" src="{{png}}" alt=""></div>
-                                </div>
-                            </div>
                             
-                            <owl-carousel-o [options]="customOptions">
- 
-                                <ng-container *ngFor="let png of logoTec">
-                                  <ng-template carouselSlide>
-                                    <img [src]="png" >
-                                  </ng-template>
-                                </ng-container>
-                             
-                              </owl-carousel-o>
+                            
                     </div>
+                    <owl-carousel-o [options]="customOptions">
+ 
+                        <ng-container *ngFor="let png of logoTec">
+                          <ng-template carouselSlide>
+                            <img [src]="png" class="img-fluid">
+                          </ng-template>
+                        </ng-container>
+                     
+                      </owl-carousel-o>
                 </div>
             </div>
         </div>
@@ -200,21 +193,3 @@
             </div>
         </div>
     </div>
-
-    <!-- discuss_projects_start  -->
-    <div class="discuss_projects">
-            <div class="outline_text white project d-none d-lg-block">
-                    Let’s talk
-            </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="project_text text-center">
-                        <h3>Let’s start your project with us</h3>
-                        <a class="boxed-btn3" href="#">Start Talking</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- discuss_projects_end  -->
