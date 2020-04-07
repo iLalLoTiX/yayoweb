@@ -55,7 +55,6 @@ export class FireBaseService {
 
   private crearArreglo(ProyectoObj: object){
     const proyectos : ProyectosModel[] = [];
-    console.log(ProyectoObj);
     if(ProyectoObj == null){
       return [];
     }

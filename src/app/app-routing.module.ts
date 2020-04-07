@@ -10,7 +10,7 @@ import { PreciosComponent } from './componentes/precios/precios.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'services', component: ServicesComponent},
+  {path: 'about', component: ServicesComponent},
   {path: 'SoftwareSolutions', component: PreciosComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
