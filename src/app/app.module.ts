@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { PoliticasComponent } from './componentes/politicas/politicas.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     LoginComponent,
     DashboardComponent,
     PreciosComponent,
-    FooterComponent
+    FooterComponent,
+    PoliticasComponent
   ],
   imports: [
     BrowserModule,
